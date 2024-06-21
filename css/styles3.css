@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    
+    font-family: Arial Narrow, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    }
+p{
+    font-size: 20px;
+}
+header {
+    display: flex;
+    min-height: 85px;
+    background-color: rgb(251, 211, 233);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10%;
+    font-size: 21px;
+
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding:0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+.header .nav-links a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+}
+.header .nav-links li a:hover{
+    color:blueviolet ;
+}
+
+.aside3{
+    padding: 11%;
+    background-image: url(/imagenes/Portada_Cejas_1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center ;
+
+
+}
+
+.container1{
+    text-align: center;
+}
+
+.content{
+    width: 395px;
+    height: 350px;
+    overflow:hidden;
+    font-size: 14px;
+    align-items: center;
+    
+}
+.cards{
+    max-width: 1700px;
+    margin: 0;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    
+}
+img{
+    width: 50%;
+    height: 50%;
+}
+@media (min-width: 480px){
+
+
+.card{
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 5px 5px ;
+    padding: 1px;
+    width: auto;
+    height: auto; 
+    
+    
+    
+}
+
+
+.card .content { 
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align:center;
+    
+}
+.card .footer {
+    background-color: rgb(251, 211, 233) ;
+    padding: 10px;
+    border-radius: 17px;
+}
+
+button{
+    padding: 10px;
+    margin: 0;
+    border-radius: 15px;
+    background-color: rgb(96, 22, 82);
+    color: white;
+    cursor: pointer; }
+
+}
+
+
